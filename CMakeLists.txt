@@ -26,7 +26,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS on)
 option(BUILD_TESTS "Build test executable" OFF)
 
 # TODO: set you target name!
-set(LIBRARY_NAME mylib)
+set(LIBRARY_NAME tinyjson)
 
 # 3rdparty dir:
 set(PROJECT_TRDPARTY_DIR ${PROJECT_SOURCE_DIR}/3rdparty)

@@ -1,0 +1,295 @@
+[
+  // fuck begin
+  {
+    "key": "cmd+f2",
+    "command": "editor.action.referenceSearch.trigger",
+    "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "alt+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "cmd+shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "cmd+i",
+    "command": "editor.action.goToDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-expandLineSelection",
+    "when": "editorTextFocus"
+  },
+  { "key": "cmd+j", "command": "workbench.action.navigateBack" },
+  { "key": "cmd+l", "command": "workbench.action.navigateForward" },
+  { "key": "alt+1", "command": "workbench.view.explorer" },
+  { "key": "alt+3", "command": "workbench.view.scm" },
+
+  { "key": "cmd+f", "command": "actions.find" },
+  { "key": "cmd+alt+n", "command": "workbench.action.showAllEditors" },
+
+  { "key": "alt+t", "command": "workbench.action.terminal.focus" },
+  { "key": "cmd+k e", "command": "workbench.action.focusActiveEditorGroup" },
+  { "key": "cmd+k p", "command": "workbench.action.problems.focus" },
+  { "key": "cmd+k o", "command": "workbench.action.output.toggleOutput" },
+
+  {
+    "key": "cmd+shift+j",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  { "key": "alt+-", "command": "editor.fold", "when": "editorTextFocus" },
+  { "key": "alt+=", "command": "editor.unfold", "when": "editorTextFocus" },
+  {
+    "key": "alt+m",
+    "command": "editor.action.jumpToBracket",
+    "when": "editorTextFocus"
+  },
+  { "key": "alt+space", "command": "workbench.action.quickOpen" },
+  {
+    "key": "cmd+alt+shift+k",
+    "command": "editor.action.moveLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+alt+shift+i",
+    "command": "editor.action.moveLinesUpAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+y",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  { "key": "cmd+shift+r", "command": "workbench.action.reloadWindow" },
+  {
+    "key": "shift+alt+enter",
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+enter",
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  { "key": "cmd+g", "command": "workbench.action.gotoLine" },
+  { "key": "cmd+shift+m", "command": "extension.selectTextInBracket" },
+  { "key": "cmd+t", "command": "workbench.action.files.newUntitledFile" },
+  { "key": "alt+f", "command": "workbench.action.gotoSymbol" },
+
+  {
+    "key": "cmd+alt+z",
+    "command": "redo",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  { "key": "cmd+e", "command": "expand_region", "when": "editorTextFocus" },
+  {
+    "key": "cmd+alt+e",
+    "command": "undo_expand_region",
+    "when": "editorTextFocus && editorHasSelection"
+  },
+
+  { "key": "cmd+;", "command": "findJump.activate" },
+
+  { "key": "alt+c", "command": "git.openChange" },
+  { "key": "alt+down", "command": "workbench.action.compareEditor.nextChange" },
+  {
+    "key": "alt+up",
+    "command": "workbench.action.compareEditor.previousChange"
+  },
+  {
+    "key": "cmd+k r",
+    "command": "workbench.action.debug.start",
+    "when": "!inDebugMode"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.debug.restart",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+k s",
+    "command": "workbench.action.debug.stop",
+    "when": "inDebugMode"
+  },
+  { "key": "f12", "command": "workbench.view.debug" },
+  {
+    "key": "cmd+\\",
+    "command": "workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+shift+e",
+    "command": "editor.debug.action.selectionToWatch",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+k d",
+    "command": "workbench.debug.action.focusRepl"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "editor.action.previewDeclaration",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+
+  {
+    "key": "cmd+1",
+    "command": "workbench.action.terminal.focusAtIndex1",
+    "when": "terminalFocus"
+  },
+
+  {
+    "key": "cmd+2",
+    "command": "workbench.action.terminal.focusAtIndex2",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+]",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+[",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+
+  {
+    "key": "cmd+k cmd+f",
+    "command": "editor.action.formatDocument",
+    "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+
+  {
+    "command": "svgviewer.open",
+    "key": "cmd+k v",
+    "when": "editorLangId == 'xml'"
+  },
+
+  {
+    "key": "cmd+alt+r",
+    "command": "git.revertSelectedRanges",
+    "when": "textCompareEditorVisible"
+  },
+
+
+  {
+    "key": "cmd+k n",
+    "command": "workbench.action.files.showOpenedFileInNewWindow"
+  },
+  {
+    "key": "cmd+k j",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "cmd+k space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+  },
+
+  {
+    "key": "alt+enter",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+
+  {
+    "key": "cmd+k w",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "editor.emmet.action.incrementNumberByOne"
+  },
+  {
+    "key": "ctrl+alt+l",
+    "command": "editor.emmet.action.incrementNumberByOneTenth"
+  },
+  {
+    "key": "ctrl+alt+shift+i",
+    "command": "editor.emmet.action.incrementNumberByTen"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "editor.emmet.action.decrementNumberByOne"
+  },
+  {
+    "key": "ctrl+alt+j",
+    "command": "editor.emmet.action.decrementNumberByOneTenth"
+  },
+  {
+    "key": "ctrl+alt+shift+k",
+    "command": "editor.emmet.action.decrementNumberByTen"
+  },
+  { "key": "ctrl+up", "command": "editor.emmet.action.incrementNumberByOne" },
+  {
+    "key": "ctrl+alt+up",
+    "command": "editor.emmet.action.incrementNumberByOneTenth"
+  },
+  {
+    "key": "ctrl+shift+up",
+    "command": "editor.emmet.action.incrementNumberByTen"
+  },
+  { "key": "ctrl+down", "command": "editor.emmet.action.decrementNumberByOne" },
+  {
+    "key": "ctrl+alt+down",
+    "command": "editor.emmet.action.decrementNumberByOneTenth"
+  },
+  {
+    "key": "ctrl+shift+down",
+    "command": "editor.emmet.action.decrementNumberByTen"
+  },
+
+  { "key": "alt+'", "command": "bookmarks.toggle", "when": "editorTextFocus" },
+  {
+    "key": "alt+cmd+k",
+    "command": "-bookmarks.toggle",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+/",
+    "command": "bookmarks.listFromAllFiles"
+  },
+
+  {
+    "key": "cmd+k s",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus"
+  },
+
+  // fuck you
+  {
+    "key": "cmd+,",
+    "command": "workbench.action.openSettingsJson"
+  },
+
+  {
+    "key": "cmd+d",
+    "command": "gitlens.diffWithWorking",
+    "when": "editorTextFocus && gitlens:isTracked"
+  },
+  {
+    "key": "cmd+k g",
+    "command": "gitlens.openFileInRemote",
+    "when": "editorTextFocus"
+  },
+  { "key": "alt+g", "command": "workbench.view.extension.gitlens" }
+  // fuck end
+  ]

@@ -21,7 +21,7 @@ find_package(fmt REQUIRED)
 
 target_include_directories(${LIBRARY_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/include)
 target_link_libraries(${LIBRARY_NAME} PRIVATE ${DEPEND_LIST})
-target_compile_features(${LIBRARY_NAME} PUBLIC cxx_std_11)
+target_compile_features(${LIBRARY_NAME} PUBLIC cxx_std_17)
 
 # IDEs should put the headers in a nice place
 source_group(

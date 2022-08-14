@@ -4,7 +4,7 @@ find_package(doctest REQUIRED)
 
 # TODO: list all files containg tests
 set(TEST_FILES
-  test_hello.cpp 
+  # test_hello.cpp 
 )
 
 # Or you just add all the .cpp file under tests folder
