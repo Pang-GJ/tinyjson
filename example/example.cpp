@@ -39,7 +39,7 @@ struct MyTest {
 void test_class_serialization() {
     MyTest test{.id = 32, .name="fda"};
     auto item = tinyjson::Parser::FromJson<MyTest>(R"({"base":{"pp":0,"qq":""},"id":32,"name":"fda"} )");
-    std::cout << tinyjson::Parser::ToJSON(item);
+    std::cout << tinyjson::Parser::ToJSON(item) << std::endl;
 }
 
 void test_string_parser() {
@@ -55,6 +55,6 @@ void test_string_parser() {
 int main() {
     std::cout << "Hello, World!" << std::endl;
     test_class_serialization();
-    test_string_parser();
+    // test_string_parser();
     return 0;
 }

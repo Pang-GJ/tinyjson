@@ -1,10 +1,10 @@
 cmake_minimum_required(VERSION 3.14...3.23)
 
-project(HelloProject
+project(tinyjson
   VERSION
     1.0
   DESCRIPTION
-    "a Hello Project!"
+    "a high performance json parser lib"
   LANGUAGES
     CXX
 )
